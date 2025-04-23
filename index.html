@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dish Kashmir</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Disha<span>Kashmir</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1 style="text-align: left;">Travel Beyond,<br> Embrace the <br> <span style="color: rgb(104, 188, 243);">Adventure.</span></h1>
+                    <p style="text-align: left;"><span style="color: rgb(176, 205, 230); font-size: 35px;">Kashmir</span> where Dal Lake’s shimmering waters meet Gulmarg’s snowy peaks. With Disha Kashmir Holiday Tour, uncover alpine meadows. Let us turn your Kashmir dream into reality.</p>
+                </div>
+                <div class = "header-form">
+                    <h2>Choose your Travel Package:</h2>
+                    <button class="btn" > <a href="#packages">Contact us</a></button>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-reo-de-janeiro-brazil.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Pehalgam, 
+                            </span>
+                            <div>
+                                <p class = "text">Idyllic valley of shepherds where the Lidder River whispers through pine forests and emerald meadows.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-north-bondi-australia.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Gulmarg,
+                            </span>
+                            <div>
+                                <p class = "text">where snow-capped peaks meet endless meadows, offering world-class skiing and the breathtaking Gondola ride to Apharwat Peak.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-berlin-germany.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Sonmarg,
+                            </span>
+                            <div>
+                                <p class = "text">Golden alpine paradise crowned with glaciers, where Thajiwas Glacier sparkles and Himalayan treks begin.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-khwaeng-wat-arun-thailand.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Bungas valley
+                            </span>
+                            <div>
+                                <p class = "text">Kashmir's frontier of untouched splendor, where rolling meadows meet dramatic mountain vistas in serene isolation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-rome-italy.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Doodpathri
+                            </span>
+                            <div>
+                                <p class = "text">Kashmir’s hidden milk-white meadow, a carpet of wildflowers under snow-dusted peaks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Yusmarg,
+                            </span>
+                            <div>
+                                <p class = "text">Serene sanctuary of untouched beauty, where Jesus’ mythical footprints meet mirror-like lakes and whispering pines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about services that we offer</span>
+                    <h2 class = "lg-title">Our services</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-hotel"></i>
+                        </span>
+                        <h3>Luxurious Hotel</h3>
+                        <p class = "text"> luxury pricing structure tailored to Kashmir’s premium experiences.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <h3>Trave Guide</h3>
+                        <p class = "text">Our multilingual guides (7+ years’ expertise) unlock hidden trails and cultural gems. Enjoy VIP access to apple orchards, artisan workshops, and secluded viewpoints. Packages include 24/7 concierge, luxury transport, and bespoke itineraries blending adventure with royal Kashmiri hospitality.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>Suitable Price</h3>
+                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">what our clients say about us</span>
+                    <h2 class = "lg-title">testimonials</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class = "text">“Disha Kashmir made our family trip magical! From the luxurious houseboat in Srinagar to the seamless Gulmarg Gondola bookings, every detail was perfect. Our kids loved the pony ride in Pahalgam, and the Kashmiri Wazwan dinner under the stars was unforgettable. Special thanks to guide Arif for sharing local folklore!”</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-1.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Rajeshwari Mehta (Mumbai) </h3>
+                                <p class = "text">Gulmarg</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">My surprise proposal in Doodpathri wouldn’t have been possible without Disha Kashmir! They arranged a private picnic setup with roses and a photographer. The Khyber Resort stay in Gulmarg felt like a fairy tale. 10/10 for personalized service!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-2.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Aditya & Sneha (Bangalore)</h3>
+                                <p class = "text">Trip to Gulmarg   </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">As solo female travelers, safety was our priority. Disha Kashmir’s all-women team curated a dream trip – from the cozy cottages in Sonmarg to the Shikara ride with Kahwa tea. Their female guide Nusrat felt like a sister!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-3.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Priyanka & Group (Delhi)</h3>
+                                <p class = "text">Trip to Pehalgam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+
+        <!-- Why Choose Us Section -->
+<section id="why-choose" class="py-4">
+    <div class="container">
+        <div class="title-wrap">
+            <span class="sm-title">reasons to choose us</span>
+            <h2 class="lg-title">Why Choose Disha Kashmir?</h2>
+        </div>
+
+        <div class="why-choose-row">
+            <!-- Item 1 -->
+            <div class="why-choose-item shadow">
+                <span class="why-choose-icon">
+                    <i class="fas fa-award"></i>
+                </span>
+                <h3>7+ Years Experience</h3>
+                <p class="text">With over a decade in travel industry, we've perfected the art of creating unforgettable journeys with local insights you won't find elsewhere.</p>
+                <a href="#testimonials" class="btn">See Reviews</a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="why-choose-item shadow">
+                <span class="why-choose-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </span>
+                <h3>Personalized Service</h3>
+                <p class="text">Your trip, your way! Custom itineraries crafted by experts who listen to your needs and preferences.</p>
+                <a href="#packages" class="btn">Custom Plans</a>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="why-choose-item shadow">
+                <span class="why-choose-icon">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <h3>Full Financial Protection</h3>
+                <p class="text">Your payments are 100% secure with us.</p>
+                <a href="about.html" class="btn">Our Promise</a>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="why-choose-item shadow">
+                <span class="why-choose-icon">
+                    <i class="fas fa-headset"></i>
+                </span>
+                <h3>24/7 Support</h3>
+                <p class="text">Round-the-clock assistance in 5 languages. Wherever you go, our team is just a call away.</p>
+                <a href="contact.html" class="btn">Get Help Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+         <!-- Add this in your index.html after the services section -->
+<section id="packages" class="py-4" data-scroll>
+    <div class="container">
+        <div class="title-wrap">
+            <span class="sm-title">Explore our special travel packages</span>
+            <h2 class="lg-title">Popular Packages</h2>
+        </div>
+
+        <div class="packages-row">
+            <div class="package-item shadow" data-scroll>
+                <div class="package-header">
+                    <h3>Gold Package</h3>
+                    <div class="price">39999<span>/person</span></div>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 7 Days/6 Nights</li>
+                    <li><i class="fas fa-check"></i> 5 Star Accommodation</li>
+                    <li><i class="fas fa-check"></i> City Tours</li>
+                    <li><i class="fas fa-check"></i> Travel Insurance</li>
+                    <li><i class="fas fa-check"></i> VIP Transfer</li>
+                </ul>
+                <button class="btn"><a href="gold.html" style="color: wheat;">Details</a></button>
+            </div>
+
+            <div class="package-item shadow" data-scroll>
+                <div class="package-header">
+                    <h3>Platinum Package</h3>
+                    <div class="price">49999<span>/person</span></div>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 14 Days/13 Nights</li>
+                    <li><i class="fas fa-check"></i> Luxury Resorts</li>
+                    <li><i class="fas fa-check"></i> Private Guide</li>
+                    <li><i class="fas fa-check"></i> VIP Services</li>
+                    <li><i class="fas fa-check"></i> Spa Package</li>
+                </ul>
+                <button class="btn">Book Now</button>
+            </div>
+
+            <div class="package-item shadow" data-scroll>
+                <div class="package-header">
+                    <h3>Hajj & Umra</h3>
+                    <div class="price">Contact<span>/quote</span></div>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Full Spiritual Journey</li>
+                    <li><i class="fas fa-check"></i> 5-Star Makkah Hotels</li>
+                    <li><i class="fas fa-check"></i> Guided Religious Tours</li>
+                    <li><i class="fas fa-check"></i> Group Discounts</li>
+                    <li><i class="fas fa-check"></i> 24/7 Support</li>
+                </ul>
+                <button class="btn">Inquire Now</button>
+            </div>
+
+            <div class="package-item shadow" data-scroll>
+                <div class="package-header">
+                    <h3>Custom Package</h3>
+                    <div class="price">Custom<span>/plan</span></div>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Personal Travel Designer</li>
+                    <li><i class="fas fa-check"></i> Flexible Itinerary</li>
+                    <li><i class="fas fa-check"></i> Any Destination</li>
+                    <li><i class="fas fa-check"></i> Luxury or Budget</li>
+                    <li><i class="fas fa-check"></i> Tailored Experiences</li>
+                </ul>
+                <button class="btn">Create Yours</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Dish<span>Kashmir</span>
+                    </a>
+                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Thailand</a></li>
+                        <li><a href = "#">Australia</a></li>
+                        <li><a href = "#">Maldives</a></li>
+                        <li><a href = "#">Switzerland</a></li>
+                        <li><a href = "#">Germany</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- Updated Footer Section -->
+<footer class="py-4">
+    <div class="container">
+        <div class="copyright-section">
+            <p class="copyright-text">
+                &copy; <span id="currentYear"></span> DishaKashmir Holidays
+            </p>
+            <p class="design-credit">
+                Designed by 
+                <a href="https://www.linkedin.com/in/tab121" target="_blank" rel="noopener noreferrer" class="designer-link">
+                    Tabish Qadri
+                    <i class="fab fa-linkedin linkedin-icon"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+        <!-- end of footer -->
+         <!-- Update your existing footer section with this code -->
+
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
