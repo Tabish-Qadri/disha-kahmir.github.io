@@ -62,3 +62,61 @@ document.querySelectorAll('.itinerary-toggle').forEach(button => {
 
 // Dynamic Year Update
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+
+
+
+
+// Scroll Direction Detection
+let lastScroll = 0;
+let scrollDirection = 'down';
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  scrollDirection = currentScroll > lastScroll ? 'down' : 'up';
+  lastScroll = currentScroll;
+});
+
+// Dynamic Scroll Animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const element = entry.target;
+    
+    if (entry.isIntersecting) {
+      element.classList.add('scroll-active');
+      element.classList.remove('scroll-exit');
+    } else {
+      if (scrollDirection === 'up') {
+        element.classList.add('scroll-exit');
+        element.classList.remove('scroll-active');
+      }
+    }
+  });
+}, {
+  threshold: 0.15,
+  rootMargin: '0px 0px -25% 0px'
+});
+
+// Apply to all animated elements
+document.querySelectorAll('[data-scroll]').forEach((el, index) => {
+  el.style.setProperty('--delay', `${index * 0.08}s`);
+  el.style.transitionDelay = `var(--delay)`;
+  observer.observe(el);
+});
+
+// Add smooth scroll behavior
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+
+document.querySelectorAll('.featured-card').forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.1}s`;
+  });
