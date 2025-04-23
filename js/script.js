@@ -193,3 +193,11 @@ document.querySelectorAll('.featured-card').forEach((card, index) => {
       console.log('Card clicked:', card.querySelector('.card-title').textContent);
     });
   });
+
+
+
+
+
+
+
+  
