@@ -117,3 +117,79 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.querySelectorAll('.featured-card').forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.1}s`;
   });
+
+
+
+  document.querySelectorAll('.expand-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.testimonial-card');
+      card.classList.toggle('expanded');
+      btn.innerHTML = card.classList.contains('expanded') ? 
+        '<i class="fas fa-minus"></i>' : '<i class="fas fa-plus"></i>';
+      
+      if(card.classList.contains('expanded')) {
+        card.style.height = 'auto';
+      } else {
+        card.style.height = '400px'; // Set original height
+      }
+    });
+  });
+  
+  // Hover animation
+  document.querySelectorAll('.testimonial-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.transform = `translateY(-5px) rotateX(${(y - rect.height/2)/15}deg) rotateY(${(x - rect.width/2)/15}deg)`;
+    });
+  
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(-5px) rotateX(0) rotateY(0)';
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.querySelectorAll('.why-choose-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      card.style.transform = `
+        perspective(1000px)
+        rotateX(${(y - rect.height/2)/15}deg)
+        rotateY(${-(x - rect.width/2)/15}deg)
+      `;
+    });
+  
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+    });
+  });
+  
+  // Click Animation
+  document.querySelectorAll('.why-choose-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+      // Add custom click behavior here
+      console.log('Card clicked:', card.querySelector('.card-title').textContent);
+    });
+  });
